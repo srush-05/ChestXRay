@@ -5,6 +5,7 @@ from Xray.entity.artifact_entity import DataIngestionArtifact
 from Xray.entity.config_entity import DataIngestionConfig
 
 from Xray.exception import XRayException
+from Xray.logger import logging
 
 class TrainPipeline:
     def _init_(self):
@@ -32,3 +33,7 @@ class TrainPipeline:
 
         except Exception as e:
             raise XRayException(e, sys)
+        
+if __name__ == "_main_":
+    train_pipeline = TrainPipeline()
+    train_pipeline.start_data_ingestion()

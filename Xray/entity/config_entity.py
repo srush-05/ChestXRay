@@ -5,7 +5,7 @@ from Xray.constant.training_pipeline import *
 
 
 @dataclass
-class DataIngestionCOnfig:
+class DataIngestionConfig:
     def __init__(self):
         self.S3_data_folder: str= S3_DATA_FOLDER
         
