@@ -9,7 +9,7 @@ ARTIFACT_DIR: str="artifacts"
 
 BUCKET_NAME: str="lungxrayimages"
 
-S3_DATA_FOLDER: str="data"
+S3_DATA_FOLDER: str="chest_xray"
 
 # Data Transformation
 
